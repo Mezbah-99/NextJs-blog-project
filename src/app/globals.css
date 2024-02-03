@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.counter {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.how-works-item:first-child .counter > .counter-line-one {
+  background: transparent;
+}
+.how-works-item:last-child .counter > .counter-line-two {
+  background: transparent;
+}
+.project-item .project-img {
+  transition: 0.5s ease-in-out;
+}
+.project-item:hover .project-img {
+  transform: scale(1.24);
+}
+
+.big-hero {
+  width: 55%;
+}
+.small-hero {
+  width: 40%;
+}
+
+/*Custom scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #22c55e43;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
+.logo-sign {
+  position: relative;
+}
+.nav-bar {
+  position: absolute;
+  top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-sign {
+    position: unset;
+  }
+  .nav-bar {
+    position: unset;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .how-works-item:first-child .counter > .counter-line-one {
+        background: #22C55E;
+      }
+      .how-works-item:last-child .counter > .counter-line-two {
+        background: #22C55E;
+      }
+}
